@@ -1,6 +1,8 @@
+'use client';
+
 import dynamic from 'next/dynamic';
 
-// Dynamically import components with no SSR to avoid hydration issues
+// Import dynamique des composants avec SSR désactivé
 const Hero = dynamic(() => import('../components/Hero'), { ssr: false });
 const About = dynamic(() => import('../components/About'), { ssr: false });
 const Skills = dynamic(() => import('../components/Skills'), { ssr: false });
