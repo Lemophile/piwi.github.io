@@ -10,8 +10,8 @@ Ce site est automatiquement déployé sur GitHub Pages à chaque push sur la bra
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/lemophile/lemophile.github.io.git
-   cd lemophile.github.io
+   git clone https://github.com/lemophile/piwi.git
+   cd piwi
    ```
 
 2. Installez les dépendances :
@@ -23,7 +23,7 @@ Ce site est automatiquement déployé sur GitHub Pages à chaque push sur la bra
    ```bash
    npm run dev
    ```
-   Le site sera accessible à l'adresse [http://localhost:3000](http://localhost:3000)
+   Le site sera accessible à l'adresse [http://localhost:3000/piwi](http://localhost:3000/piwi)
 
 ## Technologies utilisées
 
