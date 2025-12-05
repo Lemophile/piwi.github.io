@@ -33,4 +33,4 @@ jobs:
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
-          repository-name: piwi/piwi.github.io
+          repository-name: Lemophile/lemophile.github.io
