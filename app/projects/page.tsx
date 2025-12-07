@@ -1,64 +1,52 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaPython, FaDatabase } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaNetworkWired, FaShieldAlt, FaBug, FaChartLine } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      icon: FaReact,
-      github: 'https://github.com/Lemophile/ecommerce',
-      demo: 'https://ecommerce-demo.com',
-      featured: true
-    },
-    {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.',
-      tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
-      icon: FaNodeJs,
-      github: 'https://github.com/Lemophile/task-manager',
-      demo: 'https://taskmanager-demo.com',
-      featured: true
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.',
-      tech: ['React', 'API Integration', 'Chart.js', 'Geolocation'],
-      icon: FaPython,
-      github: 'https://github.com/Lemophile/weather-app',
-      demo: 'https://weather-demo.com',
-      featured: false
-    },
-    {
-      title: 'Blog Platform',
-      description: 'Modern blogging platform with markdown support, user authentication, and responsive design.',
-      tech: ['Next.js', 'MDX', 'Prisma', 'Tailwind'],
-      icon: FaDatabase,
-      github: 'https://github.com/Lemophile/blog-platform',
-      demo: 'https://blog-demo.com',
-      featured: false
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'Personal portfolio website with smooth animations, dark mode, and optimized performance.',
-      tech: ['Next.js', 'Framer Motion', 'Tailwind CSS'],
-      icon: FaReact,
-      github: 'https://github.com/Lemophile/portfolio',
-      demo: 'https://lemophile.github.io',
-      featured: false
-    },
-    {
-      title: 'API REST Service',
-      description: 'RESTful API service with authentication, rate limiting, and comprehensive documentation.',
-      tech: ['Node.js', 'Express', 'JWT', 'Swagger'],
-      icon: FaNodeJs,
-      github: 'https://github.com/Lemophile/api-service',
+      title: 'KrakenNet',
+      description: 'Advanced DoS research platform for network security testing and vulnerability assessment. Designed for educational and research purposes to understand network attack vectors.',
+      tech: ['Python', 'Scapy', 'Network Security', 'DoS Testing'],
+      icon: FaNetworkWired,
+      github: 'https://github.com/Lemophile/krakennet',
       demo: null,
-      featured: false
+      featured: true,
+      type: 'Research',
+      warning: 'For educational and research purposes only'
+    },
+    {
+      title: 'TikTok Visibility Boost',
+      description: 'Exploit-based tool for enhancing TikTok video visibility through platform vulnerabilities. Demonstrates social media security flaws.',
+      tech: ['Python', 'API Exploitation', 'Social Media', 'Security Research'],
+      icon: FaChartLine,
+      github: 'https://github.com/Lemophile/tiktok-boost',
+      demo: null,
+      featured: true,
+      type: 'Exploit',
+      warning: 'Proof of concept for security research'
+    },
+    {
+      title: 'Network Scanner',
+      description: 'Comprehensive network scanning tool for security assessments and vulnerability discovery.',
+      tech: ['Python', 'Nmap', 'Network Analysis', 'Security'],
+      icon: FaShieldAlt,
+      github: 'https://github.com/Lemophile/network-scanner',
+      demo: null,
+      featured: false,
+      type: 'Tool'
+    },
+    {
+      title: 'Exploit Framework',
+      description: 'Modular exploit development framework for testing and demonstrating security vulnerabilities.',
+      tech: ['Python', 'Metasploit', 'Exploit Dev', 'Security'],
+      icon: FaBug,
+      github: 'https://github.com/Lemophile/exploit-framework',
+      demo: null,
+      featured: false,
+      type: 'Framework'
     }
   ];
 
