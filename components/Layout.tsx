@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
-import Navbar from './Navbar';
+import Header from './Header';
 import Footer from './Footer';
 
 type LayoutProps = {
@@ -9,18 +9,19 @@ type LayoutProps = {
   description?: string;
 };
 
-export default function Layout({ children, title = 'Piwi - Personal Portfolio', description = 'Welcome to my personal portfolio' }: LayoutProps) {
+export default function Layout({ children, title = 'Piwi - Full-Stack Developer', description = 'Full-Stack Developer passionate about creating beautiful, functional, and user-centered digital experiences' }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gray-900 text-gray-100">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#111827" />
       </Head>
 
-      <Navbar />
-      <main className="flex-grow">
+      <Header />
+      <main className="pt-20">
         {children}
       </main>
       <Footer />
